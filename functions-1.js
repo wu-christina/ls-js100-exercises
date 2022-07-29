@@ -143,3 +143,27 @@ function extractRegion(locale) {
 console.log(extractRegion('en_US.UTF-8'));  // 'US'
 console.log(extractRegion('en_GB.UTF-8'));  // 'GB'
 console.log(extractRegion('ko_KR.UTF-16')); // 'KR'
+
+// Exercise 11
+/* Write a function localGreet that takes a locale as input, and returns a
+greeting. The locale allows us to greet people from different countries
+differently also when they share the language. */
+
+function localGreet(locale) {
+	let language = extractLanguage(locale);
+	let country = extractRegion(locale);
+
+	switch (country) {
+		case 'US': return 'Hey';
+		case 'GB': return 'Hello!';
+		case 'AU': return 'Howdy!';
+		default: return greet(language);
+	}
+}
+
+console.log(localGreet('en_US.UTF-8')); // 'Hey!'
+console.log(localGreet('en_GB.UTF-8')); // 'Hello!'
+console.log(localGreet('en_AU.UTF-8')); // 'Howdy!'
+console.log(localGreet('fr_FR.UTF-8')); // 'Salut!'
+console.log(localGreet('fr_CA.UTF-8')); // 'Salut!'
+console.log(localGreet('fr_MA.UTF-8')); // 'Salut!'
