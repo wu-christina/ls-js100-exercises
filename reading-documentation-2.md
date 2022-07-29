@@ -5,7 +5,7 @@ let ice_cream_taste = 'chocolate'
 let ice_cream_density = 10
 
 while(ice_cream_density > 0)
-{
+{\
     console.log('Drip...');\
     ice_cream_density -= 1;\
 }
@@ -16,7 +16,7 @@ console.log('The '+ ice_cream_taste +' ice cream melted.');
 let iceCreamTaste = 'chocolate';
 let iceCreamDensity = 10;
 
-while(iceCreamDensity > 0) {
+while(iceCreamDensity > 0) {\
   console.log('Drip...');\
   iceCreamDensity -= 1;\
 }
@@ -105,7 +105,7 @@ The below code raises a SyntaxError. If you run the code, you'll see the followi
 let speedLimit = 60;
 let currentSpeed = 80;
 
-if (currentSpeed > speedLimit) && ((currentSpeed - speedLimit) > 5) {
+if (currentSpeed > speedLimit) && ((currentSpeed - speedLimit) > 5) {\
   console.log('"People are so bad at driving cars ' +\
     'that computers don\'t have to be that good to be much better." ' +\
     '-- Marc Andreessen');\
@@ -115,7 +115,7 @@ if (currentSpeed > speedLimit) && ((currentSpeed - speedLimit) > 5) {
 let speedLimit = 60;
 let currentSpeed = 80;
 
-if ((currentSpeed > speedLimit) && (currentSpeed - speedLimit > 5)) {
+if ((currentSpeed > speedLimit) && (currentSpeed - speedLimit > 5)) {\
   console.log('"People are so bad at driving cars ' +\
     'that computers don\'t have to be that good to be much better." ' +\
     '-- Marc Andreessen');\
@@ -132,7 +132,7 @@ You'll see that the code raises an error: TypeError: tweet.length is not a funct
 
 let tweet = 'Woohoo! :-)';
 
-if (tweet.length() > 140) {
+if (tweet.length() > 140) {\
   console.log('Tweet is too long!');\
 }
 
